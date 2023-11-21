@@ -1,19 +1,19 @@
 <script>
-  import Spacing from '$lib/spacing.svelte';
-  import Hero from './hero.svelte';
-  import Bio from './bio.svelte';
-  import Leadership from './leadership.svelte';
-  import Experience from './experience.svelte';
-  import Skills from './skills.svelte';
-  import Languages from './languages.svelte';
-  import Contact from './contact.svelte';
+	import Spacing from '$lib/spacing.svelte';
+	import Hero from './hero.svelte';
+	import Bio from './bio.svelte';
+	import Leadership from './leadership.svelte';
+	import Experience from './experience.svelte';
+	import Skills from './skills.svelte';
+	import Languages from './languages.svelte';
+	import Contact from './contact.svelte';
 </script>
 
 <svelte:head>
-  <title>Karni</title>
+	<title>Karni</title>
 </svelte:head>
 
-<Spacing --min="175px" --med="200px" --max="200px" />
+<!-- <Spacing --min="175px" --med="200px" --max="200px" /> -->
 
 <Hero />
 
