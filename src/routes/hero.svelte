@@ -11,8 +11,8 @@
 		<div class="hero__bio">
 			<p class="hero__bio-description">
 				Hello! Nice to meet you. My name is Karnikaa Velumani. I am a software engineer specializing
-				in frontend development. This is just a random blurb where I'll write a little bit about
-				myself so I still need to think about what I'll write.
+				in frontend development. This website reflects the world inside my head, and I aim to bring
+				it to life through my coding skills. Check out all the pages to learn more about me!
 			</p>
 		</div>
 	</div>
@@ -22,16 +22,14 @@
 	section {
 		background-color: #fff;
 		display: grid;
-		justify-self: center;
 		align-items: center;
 		max-width: 100%;
-		height: 100%;
 		margin: 0 auto;
 	}
 
 	.hero__content {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 3fr 1fr;
 	}
 
 	.hero__title {
@@ -41,34 +39,87 @@
 		max-width: 100%;
 	}
 
+	.hero__content {
+		position: relative;
+	}
+
 	.hero__image img {
 		max-width: 100%;
-		/* z-index: -999; */
+		position: relative;
 	}
 
 	.hero__title h1 {
+		background-color: #fff;
+		border: 2px solid #000;
+		border-radius: 50%;
+		height: 20vh;
+		width: 5vw;
+	}
+
+	.hero__description {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		position: absolute;
 		font-weight: 700;
+		font-size: 20px;
+		z-index: 10;
+		left: 65%;
+		padding: 0 2em;
 	}
 
 	.hero__bio {
-		position: relative;
-		background: rgba(255, 255, 255, 0.7);
-
-		border: 2px solid #000;
-		max-width: 90%;
-		margin: -2em 2em;
-		z-index: 999;
-		/* z-index: 999; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 1em 2em;
+		background: white;
 	}
 
 	.hero__bio-description {
+		display: flex;
+		text-align: center;
+		font-size: 10px;
 		font-weight: 700;
-		margin: 2em 2em;
+		max-width: 90%;
+		padding: 2em 2em;
+		border: 2px solid #000;
+	}
+
+	@media screen and (min-width: 768px) {
+		.hero__title h1 {
+			height: 40vh;
+			width: 5vw;
+		}
+
+		.hero__description {
+			font-size: 40px;
+			left: 70%;
+		}
+
+		.hero__bio-description {
+			font-size: 15px;
+		}
 	}
 
 	@media screen and (min-width: 1024px) {
 		section {
 			max-width: 1024px;
+		}
+
+		.hero__title h1 {
+			height: 45vh;
+			width: 5vw;
+		}
+
+		.hero__description {
+			font-size: 50px;
+			left: 65%;
+		}
+
+		.hero__bio-description {
+			font-size: 20px;
 		}
 	}
 </style>
