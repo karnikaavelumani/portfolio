@@ -1,14 +1,14 @@
 /* @import url('https://fonts.googleapis.com/css?family=Comic+Neue:wght@400;700'); */
 
 @font-face {
-	font-family: 'MangaFont';
-	src: url('/manga-font/mangat-webfont.woff') format('woff');
+	font-family: 'AnimeAceFont';
+	src: url('/anime-ace-font/anime-ace.regular.woff') format('woff');
 }
 
 html,
 body,
 #svelte {
-	font-family: 'MangaFont', 'Verdana', 'Helvetica', sans-serif;
+	font-family: 'AnimeAceFont', 'Verdana', 'Helvetica', sans-serif;
 }
 
 body {

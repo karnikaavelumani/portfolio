@@ -114,7 +114,7 @@
 		}
 
 		.hero__description {
-			font-size: 50px;
+			font-size: 40px;
 			left: 65%;
 		}
 
