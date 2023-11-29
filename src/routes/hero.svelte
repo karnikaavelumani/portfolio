@@ -31,20 +31,19 @@
 	.hero__content {
 		display: grid;
 		grid-template-columns: 3fr 1fr;
-		place-items: center;
-		position: relative;
+		align-items: center;
 	}
 
 	.hero__title {
-		/* display: grid;
+		display: grid;
 		justify-self: center;
-		align-items: center; */
+		align-items: center;
 		max-width: 100%;
 	}
 
 	.hero__image img {
 		max-width: 100%;
-		/* position: relative; */
+		position: relative;
 	}
 
 	.hero__title h1 {
@@ -53,8 +52,6 @@
 		border-radius: 50%;
 		max-width: 5rem;
 		width: 100%;
-		/* height: 50%;
-		width: 5em; */
 	}
 
 	.hero__title__description {
@@ -62,10 +59,10 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		/* position: absolute; */
+		position: absolute;
 		font-size: 15px;
-		/* z-index: 10; */
-		/* right: 1rem; */
+		z-index: 10;
+		right: 1rem;
 		padding: 2rem;
 		margin-right: 1rem;
 	}
@@ -96,7 +93,7 @@
 		.hero__title__description {
 			font-size: 35px;
 			padding: 8rem 3rem;
-			/* right: 2rem; */
+			right: 2rem;
 		}
 
 		.hero__bio__description {
@@ -116,12 +113,12 @@
 		.hero__title__description {
 			font-size: 40px;
 			padding: 10rem 5rem;
-			/* right: 2rem; */
+			right: 2rem;
 		}
 
 		.hero__bio__description {
 			font-size: 20px;
-			/* padding: 8rem 10rem; */
+			padding: 2rem 2rem;
 		}
 	}
 </style>
