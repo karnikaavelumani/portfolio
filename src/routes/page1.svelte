@@ -1,15 +1,15 @@
-<section class="hero__component">
-	<div class="hero__container">
-		<div class="hero__content">
-			<div class="hero__image">
+<section class="page1__component">
+	<div class="page1__container">
+		<div class="page1__content">
+			<div class="page1__image">
 				<img src="/assets/karni-hero.svg" alt="Drawing of Karni in manga style art" />
 			</div>
-			<div class="hero__title">
-				<h1 class="hero__title__description">Welcome to my website!</h1>
+			<div class="page1__title">
+				<h1 class="page1__title__description">Welcome to my website!</h1>
 			</div>
 		</div>
-		<div class="hero__bio">
-			<p class="hero__bio__description">
+		<div class="page1__bio">
+			<p class="page1__bio__description">
 				Hello! Nice to meet you. My name is Karnikaa Velumani. I am a software engineer specializing
 				in frontend development. This website reflects the world inside my head, and I aim to bring
 				it to life through my programming skills. Check out all the pages to learn more about me!
@@ -28,25 +28,25 @@
 		margin: 0 auto;
 	}
 
-	.hero__content {
+	.page1__content {
 		display: grid;
 		grid-template-columns: 3fr 1fr;
 		align-items: center;
 	}
 
-	.hero__title {
+	.page1__title {
 		display: grid;
 		justify-self: center;
 		align-items: center;
 		max-width: 100%;
 	}
 
-	.hero__image img {
+	.page1__image img {
 		max-width: 100%;
 		position: relative;
 	}
 
-	.hero__title h1 {
+	.page1__title h1 {
 		background-color: #fff;
 		border: 2px solid #000;
 		border-radius: 50%;
@@ -54,7 +54,7 @@
 		width: 100%;
 	}
 
-	.hero__title__description {
+	.page1__title__description {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -66,7 +66,7 @@
 		right: 5vw;
 	}
 
-	.hero__bio {
+	.page1__bio {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -74,7 +74,7 @@
 		background: white;
 	}
 
-	.hero__bio__description {
+	.page1__bio__description {
 		display: flex;
 		text-align: center;
 		font-size: 10px;
@@ -85,7 +85,7 @@
 	}
 
 	@media screen and (min-width: 500px) {
-		.hero__title__description {
+		.page1__title__description {
 			font-size: 20px;
 			padding: 15% 5%;
 			right: 10vw;
@@ -93,17 +93,17 @@
 	}
 
 	@media screen and (min-width: 768px) {
-		.hero__title h1 {
+		.page1__title h1 {
 			max-width: 10rem;
 		}
 
-		.hero__title__description {
+		.page1__title__description {
 			font-size: 35px;
 			padding: 15% 5%;
 			right: 5%;
 		}
 
-		.hero__bio__description {
+		.page1__bio__description {
 			font-size: 15px;
 		}
 	}
@@ -113,18 +113,18 @@
 			max-width: 1024px;
 		}
 
-		.hero__title h1 {
+		.page1__title h1 {
 			max-width: 10rem;
 		}
 
-		.hero__title__description {
+		.page1__title__description {
 			font-size: 40px;
 			padding: 100% 50%;
 			right: 100%;
 			position: relative;
 		}
 
-		.hero__bio__description {
+		.page1__bio__description {
 			font-size: 20px;
 			padding: 2rem 2rem;
 		}
