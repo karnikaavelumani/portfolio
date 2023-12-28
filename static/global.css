@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700');
+/* @import url('https://fonts.googleapis.com/css?family=Comic+Neue:wght@400;700'); */
+
+@font-face {
+	font-family: 'AnimeAceFont';
+	src: url('/anime-ace-font/anime-ace.regular.woff') format('woff');
+}
 
 html,
 body,
 #svelte {
-  font-family: 'Poppins', 'Verdana', 'Helvetica', sans-serif;
-  font-display: fallback;
+	font-family: 'AnimeAceFont', 'Verdana', 'Helvetica', sans-serif;
+}
+
+body {
+	background-color: #1a1b1d;
 }
