@@ -21,7 +21,7 @@
 					alt="Drawing of Karni correcting a math test in manga style art"
 				/>
 			</div>
-			<!-- <div class="page1__experience__job2">
+			<div class="page1__experience__job2">
 				<p class="page1__experience__job2__description">
 					Following that, I undertook the role as a Data Analyst intern.
 				</p>
@@ -29,12 +29,12 @@
 					src="/assets/analyst-intern.svg"
 					alt="Drawing of laptop with analytics on the screen in manga style art"
 				/>
-			</div> -->
+			</div>
 		</div>
 	</div>
 </section>
 
-<style>
+<!-- <style>
 	section {
 		background-color: #fff;
 		border: 2px solid #000;
@@ -187,5 +187,138 @@
 			margin: 0 2em;
 			margin-bottom: 1em;
 		}
+	}
+</style> -->
+
+<style>
+	section {
+		background-color: #fff;
+		border: 2px solid #000;
+		display: grid;
+		align-items: center;
+		max-width: 100%;
+		margin: 0 auto;
+		max-width: 1024px;
+	}
+
+	.page1__content {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		align-items: center;
+	}
+
+	.page1__content img {
+		max-width: 100%;
+		position: relative;
+	}
+
+	.page1__title {
+		display: grid;
+		justify-self: center;
+		align-items: center;
+		max-width: 100%;
+	}
+
+	.page1__title h1 {
+		background-color: #fff;
+		border: 2px solid #000;
+		border-radius: 50%;
+		max-width: 10rem;
+		width: 100%;
+	}
+
+	.page1__title__description {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		position: relative;
+		font-size: 40px;
+		z-index: 10;
+		padding: 100% 50%;
+		right: 100%;
+	}
+
+	.page1__bio {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 3em;
+		background: white;
+	}
+
+	.page1__bio__description {
+		display: flex;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 600;
+		max-width: 90%;
+		padding: 2em;
+		border: 2px solid #000;
+	}
+
+	.page1__experience {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5em;
+		margin: 0 3.5em;
+		margin-bottom: 3em;
+	}
+
+	.page1__experience__job1 {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		align-items: center;
+		border: 2px solid #000;
+	}
+
+	.page1__experience__job1 img {
+		max-width: 100%;
+		position: relative;
+		grid-column: 2;
+	}
+
+	.page1__experience__job1__description {
+		display: grid;
+		justify-self: start;
+		align-self: end;
+		text-align: center;
+		position: absolute;
+		max-width: 5rem;
+		width: 100%;
+		font-weight: 600;
+		font-size: 20px;
+		z-index: 10;
+		padding: 1rem 2rem;
+	}
+
+	.page1__experience__job2 {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		align-items: center;
+		border: 2px solid #000;
+	}
+
+	.page1__experience__job2 img {
+		max-width: 100%;
+		display: grid;
+		grid-column: 2;
+		justify-self: end;
+		align-self: end;
+		position: relative;
+	}
+
+	.page1__experience__job2__description {
+		display: grid;
+		justify-self: start;
+		align-self: start;
+		text-align: center;
+		position: absolute;
+		max-width: 5rem;
+		width: 100%;
+		font-weight: 600;
+		font-size: 20px;
+		z-index: 10;
+		padding: 1rem;
 	}
 </style>
