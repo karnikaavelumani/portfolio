@@ -8,9 +8,10 @@
 		</div>
 		<div class="page1__bio">
 			<p class="page1__bio__description">
-				Hello! Nice to meet you. My name is Karnikaa Velumani. I am a software engineer specializing
-				in frontend development. This website reflects the world inside my head, and I aim to bring
-				it to life through my programming skills. Check out all the pages to learn more about me!
+				Hello! Nice to meet you. My name is Karnikaa Velumani, but you can call me Karni. I am an
+				aspiring software engineer with an interest in frontend development and developer relations.
+				This website reflects my vision of tech, and I aim to bring it to life through my
+				programming skills. Check out all the pages to learn more about me!
 			</p>
 		</div>
 		<div class="page1__experience">
