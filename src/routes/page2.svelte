@@ -126,12 +126,12 @@
 		grid-template-columns: 1fr;
 		justify-self: end;
 		align-self: end;
-		/* max-width: 100%; */
 		height: 25rem;
 		background-color: #fff;
 		border: 2px solid #000;
-		padding: 0 0 3rem 3rem;
+		padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 		margin-bottom: 2rem;
+		width: 80%;
 	}
 
 	.third__block__content {
@@ -142,11 +142,11 @@
 		/* max-width: 100%; */
 	}
 
-	/* .third__block__content__text {
+	.third__block__content__text {
 		color: #000;
 		font-size: 1.25rem;
 		font-weight: 700;
 		text-align: center;
-		padding: 0.1rem;
-	} */
+		/* padding: 0.1rem; */
+	}
 </style>
