@@ -139,7 +139,6 @@
 		justify-self: center;
 		align-self: center;
 		text-align: center;
-		/* max-width: 100%; */
 	}
 
 	.third__block__content__text {
@@ -147,6 +146,5 @@
 		font-size: 1.25rem;
 		font-weight: 700;
 		text-align: center;
-		/* padding: 0.1rem; */
 	}
 </style>
