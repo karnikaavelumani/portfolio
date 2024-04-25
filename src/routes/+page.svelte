@@ -15,8 +15,8 @@
 
 <Page2 />
 
-<Spacing --min="75px" --med="100px" --max="120px" />
+<Spacing --min="75px" --med="100px" --max="30px" />
 
 <Page3 />
 
-<Spacing --min="75px" --med="100px" --max="120px" />
+<Spacing --min="75px" --med="100px" --max="30px" />
