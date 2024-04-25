@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>Karni</title>
+	<title>Karni's Portfolio</title>
 </svelte:head>
 
 <Page1 />
