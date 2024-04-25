@@ -1,44 +1,22 @@
 <script>
-  import Spacing from '$lib/spacing.svelte';
-  import Hero from './hero.svelte';
-  import Bio from './bio.svelte';
-  import Leadership from './leadership.svelte';
-  import Experience from './experience.svelte';
-  import Skills from './skills.svelte';
-  import Languages from './languages.svelte';
-  import Contact from './contact.svelte';
+	import Spacing from '$lib/spacing.svelte';
+	import Page1 from './page1.svelte';
+	import Page2 from './page2.svelte';
+	import Page3 from './page3.svelte';
 </script>
 
 <svelte:head>
-  <title>Karni</title>
+	<title>Karni's Portfolio</title>
 </svelte:head>
 
-<Spacing --min="175px" --med="200px" --max="200px" />
+<Page1 />
 
-<Hero />
+<Spacing --min="75px" --med="100px" --max="30px" />
 
-<Spacing --min="120px" --med="175px" --max="200px" />
+<Page2 />
 
-<Bio />
+<Spacing --min="75px" --med="100px" --max="30px" />
 
-<Spacing --min="120px" --med="175px" --max="200px" />
+<Page3 />
 
-<Leadership />
-
-<Spacing --min="120px" --med="175px" --max="200px" />
-
-<Experience />
-
-<Spacing --min="120px" --med="175px" --max="200px" />
-
-<Skills />
-
-<Spacing --min="120px" --med="175px" --max="200px" />
-
-<Languages />
-
-<Spacing --min="120px" --med="175px" --max="200px" />
-
-<Contact />
-
-<Spacing --min="75px" --med="100px" --max="120px" />
+<Spacing --min="75px" --med="100px" --max="30px" />
