@@ -1,11 +1,11 @@
 <script lang="ts">
 	//import Navbar from '$lib/components/nav/bar.svelte';
-	import Footer from '$lib/components/footer/footer.svelte';
+	// import Footer from '$lib/components/footer/footer.svelte';
 </script>
 
 <!-- <Navbar /> -->
 <slot />
-<Footer />
+<!-- <Footer /> -->
 
 <!-- <style>
 	main {
