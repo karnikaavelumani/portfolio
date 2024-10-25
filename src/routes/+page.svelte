@@ -13,4 +13,4 @@
 <About />
 <Experience />
 
-<Spacing --min="75px" --med="100px" --max="30px" />
+<!-- <Spacing --min="75px" --med="100px" --max="30px" /> -->
