@@ -14,7 +14,7 @@
 				programming skills. Check out all the pages to learn more about me!
 			</p>
 		</div>
-		<!-- <div class="page1__experience">
+		<div class="page1__experience">
 			<div class="page1__experience__job1">
 				<p class="page1__experience__job1__description">Originally, I worked as a STEAM teacher!</p>
 				<img
@@ -31,7 +31,7 @@
 					alt="Drawing of laptop with analytics on the screen in manga style art"
 				/>
 			</div>
-		</div> -->
+		</div>
 	</div>
 </section>
 
@@ -200,7 +200,6 @@
 		max-width: 100%;
 		margin: 0 auto;
 		max-width: 1024px;
-		
 	}
 
 	.page1__content {
