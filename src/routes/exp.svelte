@@ -1,3 +1,12 @@
+<script lang="ts">
+	import Button from '../lib/components/button/button.svelte';
+
+	// Custom click handler function
+	function handleClick(event: MouseEvent) {
+		console.log('Button clicked!', event);
+	}
+</script>
+
 <section class="container">
 	<div class="content">
 		<h1 class="header">EXPERIENCE</h1>
@@ -18,6 +27,12 @@
 				</p>
 				<button class="button">Website</button>
 				<button class="button">Case Study</button>
+				<Button
+					link="https://www.example.com"
+					text="Go to Example"
+					redirect={true}
+					on:click={handleClick}
+				/>
 			</div>
 		</div>
 		<div class="tab">
@@ -196,4 +211,66 @@
 	.button {
 		margin: 10px 0;
 	}
+
+	/* @media (max-width: 1024px) {
+		.container {
+			width: 70%;
+		}
+
+		.header {
+			font-size: 60px;
+		}
+
+		.tab__label {
+			font-size: 22px;
+		}
+
+		.description {
+			font-size: 14px;
+		}
+
+		.extra {
+			font-size: 12px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.container {
+			width: 90%;
+		}
+
+		.header {
+			font-size: 55px;
+		}
+
+		.tab__label {
+			font-size: 20px;
+		}
+
+		.description {
+			font-size: 14px;
+		}
+
+		.extra {
+			font-size: 12px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.header {
+			font-size: 50px;
+		}
+
+		.tab__label {
+			font-size: 20px;
+		}
+
+		.description {
+			font-size: 14px;
+		}
+
+		.extra {
+			font-size: 12px;
+		}
+	} */
 </style>
