@@ -1,6 +1,6 @@
 <section class="container">
 	<div class="header">
-		<img src="/assets/name_light.svg" alt="Karnikaa Velumani" />
+		<img src="/assets/name_light.svg" alt="Karnikaa Velumani" title="Karnikaa Velumani" />
 	</div>
 </section>
 
@@ -21,6 +21,7 @@
 	}
 
 	.header img {
-		width: 1000px;
+		width: 80vw;
+		margin: 10px;
 	}
 </style>
