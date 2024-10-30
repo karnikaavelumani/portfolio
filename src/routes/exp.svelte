@@ -28,7 +28,7 @@
 
 		<div class="tab">
 			<input type="checkbox" name="exp-2" id="cb2" />
-			<label for="cb2" class="tab__label"> Open Source Software Co-Team Lead </label>
+			<label for="cb2" class="tab__label"> Open Source Co-Team Lead </label>
 			<hr />
 			<div class="tab__content">
 				<div class="extra">
@@ -50,9 +50,7 @@
 
 		<div class="tab">
 			<input type="checkbox" name="exp-3" id="cb3" />
-			<label for="cb3" class="tab__label">
-				Association for Computing Machinery CSUF President
-			</label>
+			<label for="cb3" class="tab__label"> ACM at CSUF President </label>
 			<hr />
 			<div class="tab__content">
 				<div class="extra">
@@ -121,7 +119,6 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		height: 100vh;
 		width: 50%;
 		margin: 0 auto;
 	}
@@ -154,12 +151,13 @@
 		transition: all 0.35s;
 	}
 	.tab input:checked ~ .tab__content {
-		max-height: none;
+		max-height: 20rem;
 	}
 
 	.tab__label {
 		display: flex;
 		flex-direction: row;
+		align-items: flex-end;
 		justify-content: space-between;
 		font-size: 26px;
 		font-weight: 400;
@@ -168,7 +166,6 @@
 
 	.tab__label::after {
 		content: '+';
-		text-align: center;
 		font-size: 30px;
 		font-weight: 200;
 		transform: rotate(90deg);
@@ -199,25 +196,9 @@
 		padding: 0;
 	}
 
-	/* @media (max-width: 1024px) {
-		.container {
-			width: 70%;
-		}
-
-		.header {
-			font-size: 60px;
-		}
-
+	@media (max-width: 1024px) {
 		.tab__label {
-			font-size: 22px;
-		}
-
-		.description {
-			font-size: 14px;
-		}
-
-		.extra {
-			font-size: 12px;
+			font-size: 25px;
 		}
 	}
 
@@ -249,7 +230,7 @@
 		}
 
 		.tab__label {
-			font-size: 20px;
+			font-size: 15px;
 		}
 
 		.description {
@@ -259,5 +240,5 @@
 		.extra {
 			font-size: 12px;
 		}
-	} */
+	}
 </style>
