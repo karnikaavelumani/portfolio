@@ -1,15 +1,11 @@
-<script lang="ts">
+<script>
 	import Button from '../lib/components/button/button.svelte';
-
-	// Custom click handler function
-	function handleClick(event: MouseEvent) {
-		console.log('Button clicked!', event);
-	}
 </script>
 
 <section class="container">
 	<div class="content">
 		<h1 class="header">EXPERIENCE</h1>
+
 		<div class="tab">
 			<input type="checkbox" name="exp-1" id="cb1" />
 			<label for="cb1" class="tab__label"> Freelance UI/UX Designer </label>
@@ -25,16 +21,11 @@
 					homepage assets using Figma, with design implementation executed in collaboration with a
 					team of two, leveraging HTML/CSS within the Angular.js framework.
 				</p>
-				<button class="button">Website</button>
-				<button class="button">Case Study</button>
-				<Button
-					link="https://www.example.com"
-					text="Go to Example"
-					redirect={true}
-					on:click={handleClick}
-				/>
+				<Button text="Website" href="https://edaters.gg" />
+				<Button text="Case Study" href="/disabled" disabled={true} />
 			</div>
 		</div>
+
 		<div class="tab">
 			<input type="checkbox" name="exp-2" id="cb2" />
 			<label for="cb2" class="tab__label"> Open Source Software Co-Team Lead </label>
@@ -51,9 +42,9 @@
 					languages, and industry domains, fostering an agile approach to project development and
 					collaboration.
 				</p>
-				<button class="button">Video</button>
-				<button class="button">LinkedIn</button>
-				<button class="button">Projects</button>
+				<Button text="Video" href="https://www.youtube.com/watch?v=GyU0s2McDgw" />
+				<Button text="LinkedIn" href="https://www.linkedin.com/company/acmcsufoss/" />
+				<Button text="Projects" href="https://github.com/acmcsufoss/" />
 			</div>
 		</div>
 
@@ -76,7 +67,7 @@
 					Represented the club at campus events, actively participating and engaging as ACM’s lead
 					representative.
 				</p>
-				<button class="button">Website</button>
+				<Button text="Website" href="https://acmcsuf.com/" />
 			</div>
 		</div>
 
@@ -97,7 +88,7 @@
 					rigorous audits to ensure the functionality of all key assets, models, and dashboards,
 					while maintaining seamless user access.
 				</p>
-				<button class="button">PowerPoint Presentation</button>
+				<Button text="PowerPoint Presentation" href="/disabled" disabled={true} />
 			</div>
 		</div>
 
@@ -118,7 +109,7 @@
 					tailored to students with varying levels of computer science knowledge, effectively
 					enhancing critical thinking skills.
 				</p>
-				<button class="button">Website</button>
+				<Button text="Website" href="https://www.myinnoacademy.com/" />
 			</div>
 		</div>
 	</div>
@@ -206,10 +197,6 @@
 		margin: 0;
 		margin-bottom: 2px;
 		padding: 0;
-	}
-
-	.button {
-		margin: 10px 0;
 	}
 
 	/* @media (max-width: 1024px) {
