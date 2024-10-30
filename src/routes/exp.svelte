@@ -154,7 +154,7 @@
 		transition: all 0.35s;
 	}
 	.tab input:checked ~ .tab__content {
-		max-height: 10rem;
+		max-height: none;
 	}
 
 	.tab__label {
