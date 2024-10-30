@@ -39,4 +39,33 @@
 		font-size: 26px;
 		font-weight: 300;
 	}
+
+	/* make it responsive in all screen sizes */
+	@media (max-width: 768px) {
+		.container {
+			width: 80%;
+		}
+
+		.header {
+			font-size: 60px;
+		}
+
+		.description {
+			font-size: 20px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.container {
+			width: 90%;
+		}
+
+		.header {
+			font-size: 50px;
+		}
+
+		.description {
+			font-size: 18px;
+		}
+	}
 </style>
