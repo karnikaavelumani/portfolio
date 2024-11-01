@@ -136,6 +136,10 @@
 		margin: 0;
 	}
 
+	hr {
+		margin-top: 0;
+	}
+
 	.tab {
 		position: relative;
 		margin-top: 10px;
@@ -157,7 +161,7 @@
 	.tab__label {
 		display: flex;
 		flex-direction: row;
-		align-items: flex-end;
+		align-items: center;
 		justify-content: space-between;
 		font-size: 26px;
 		font-weight: 400;
