@@ -3,6 +3,8 @@
 	import Hero from './hero.svelte';
 	import About from './about.svelte';
 	import Experience from './exp.svelte';
+	import Projects from './projects.svelte';
+	import Skills from './skills.svelte';
 </script>
 
 <svelte:head>
@@ -12,5 +14,5 @@
 <Hero />
 <About />
 <Experience />
-
-<Spacing --min="75px" --med="100px" --max="30px" />
+<Projects />
+<Skills />

@@ -121,6 +121,7 @@
 		justify-content: center;
 		width: 50%;
 		margin: 0 auto;
+		min-height: 100vh;
 	}
 
 	.content {
