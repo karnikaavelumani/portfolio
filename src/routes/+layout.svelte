@@ -5,7 +5,7 @@
 
 <!-- <Navbar /> -->
 <slot />
-<!-- <Footer /> -->
+<Footer />
 
 <!-- <style>
 	main {

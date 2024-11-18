@@ -10,7 +10,7 @@
 <footer>
 	<div class="container">
 		<div class="content">
-			<!-- <p class="social_title">Stay connected</p> -->
+			<p class="go_back">Back to the top!</p>
 			<ul class="contacts">
 				{#each contacts as contact (contact.name)}
 					<li>
@@ -32,7 +32,38 @@
 		align-items: center;
 		justify-content: center;
 		background-color: black;
-		margin: 0;
+		border-radius: 100px 100px 0 0;
 		width: 100%;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 50%;
+	}
+
+	ul {
+		display: flex;
+		gap: 1em;
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		border: 1px solid white;
+		border-radius: 50%;
+		list-style: none;
+	}
+
+	img {
+		width: 35px;
+		height: 35px;
+		padding: 10px;
+	}
+
+	p {
+		color: white;
 	}
 </style>
