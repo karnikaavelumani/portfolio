@@ -4,9 +4,14 @@
 	export let disabled = false; // Default disabled state
 	export let imageSrc = ''; // Optional image source
 	export let imageAlt = ''; // Optional alt text for the image
+	export const target = '_blank'; // Optional target attribute for the link
 </script>
 
-<a href={disabled ? undefined : href} class="button {disabled ? 'disabled' : ''}">
+<a
+	href={disabled ? undefined : href}
+	class="button {disabled ? 'disabled' : ''}"
+	{...target ? { target } : {}}
+>
 	{#if imageSrc}
 		<img src={imageSrc} alt={imageAlt} class="button-icon" />
 	{/if}
@@ -26,14 +31,15 @@
 		font-size: 14px;
 		user-select: none;
 		transition: background-color 0.25s ease-in-out;
+	}
 
-		&:hover {
-			background-color: lightgray;
-		}
+	/* Add hover effect only if not disabled */
+	.button:not(.disabled):hover {
+		background-color: lightgray;
+	}
 
-		&:active {
-			background-color: lightblue;
-		}
+	.button:not(.disabled):active {
+		background-color: lightblue;
 	}
 
 	.button-icon {

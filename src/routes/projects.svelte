@@ -6,35 +6,53 @@
 	<div class="content">
 		<h1 class="header">PROJECTS</h1>
 		<div class="groups">
-			<div class="project">
-				<img src="/assets/acmcsuf.svg" alt="Screenshot of project acmcsuf.com" />
-				<div class="description">
-					<h4 class="title">acmcsuf.com</h4>
-					<Button text="SvelteKit" href="/disabled" disabled={true} />
-					<Button text="TypeScript" href="/disabled" disabled={true} />
-					<Button text="HTML5/CSS3" href="/disabled" disabled={true} />
+			<a
+				href="https://github.com/karnikaavelumani/acmcsuf.com"
+				class="project-link"
+				target="_blank"
+			>
+				<div class="project">
+					<img src="/assets/acmcsuf.svg" alt="Screenshot of project acmcsuf.com" />
+					<div class="description">
+						<h4 class="title">acmcsuf.com</h4>
+						<Button text="SvelteKit" href="/disabled" disabled={true} />
+						<Button text="TypeScript" href="/disabled" disabled={true} />
+						<Button text="HTML5/CSS3" href="/disabled" disabled={true} />
+					</div>
 				</div>
-			</div>
+			</a>
 
-			<div class="project">
-				<img src="/assets/trello.svg" alt="Screenshot of project trello clone" />
-				<div class="description">
-					<h4 class="title">Trello Clone</h4>
-					<Button text="React" href="/disabled" disabled={true} />
-					<Button text="Next.js" href="/disabled" disabled={true} />
-					<Button text="Node.js" href="/disabled" disabled={true} />
+			<a
+				href="https://github.com/karnikaavelumani/task-manager"
+				class="project-link"
+				target="_blank"
+			>
+				<div class="project">
+					<img src="/assets/trello.svg" alt="Screenshot of project trello clone" />
+					<div class="description">
+						<h4 class="title">Trello Clone</h4>
+						<Button text="React" href="/disabled" disabled={true} />
+						<Button text="Next.js" href="/disabled" disabled={true} />
+						<Button text="Node.js" href="/disabled" disabled={true} />
+					</div>
 				</div>
-			</div>
+			</a>
 
-			<div class="project">
-				<img src="/assets/gnome.svg" alt="Screenshot of gnome asset" />
-				<div class="description">
-					<h4 class="title">Gnome Asset</h4>
-					<Button text="Unity" href="/disabled" disabled={true} />
-					<Button text="C#" href="/disabled" disabled={true} />
-					<Button text="Aseprite" href="/disabled" disabled={true} />
+			<a
+				href="https://github.com/karnikaavelumani/KnightsvGnomes"
+				class="project-link"
+				target="_blank"
+			>
+				<div class="project">
+					<img src="/assets/gnome.svg" alt="Screenshot of gnome asset" />
+					<div class="description">
+						<h4 class="title">Knights vs Gnomes</h4>
+						<Button text="Unity" href="/disabled" disabled={true} />
+						<Button text="C#" href="/disabled" disabled={true} />
+						<Button text="Aseprite" href="/disabled" disabled={true} />
+					</div>
 				</div>
-			</div>
+			</a>
 		</div>
 	</div>
 	<div class="extra">
@@ -74,7 +92,7 @@
 	}
 
 	.project {
-		border: solid;
+		border: 1px solid;
 		border-radius: 25px;
 		padding: 2rem;
 		width: 400px;
@@ -82,11 +100,22 @@
 		display: flex;
 		justify-content: center;
 		position: relative;
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
 	}
 
-	img {
+	.project:hover {
+		transform: scale(1.05);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	}
+
+	.project img {
 		max-width: 80%;
 		max-height: 80%;
+	}
+
+	.project-link {
+		text-decoration: none;
+		color: inherit;
 	}
 
 	.description {
