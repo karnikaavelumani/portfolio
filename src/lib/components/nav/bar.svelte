@@ -6,7 +6,11 @@
 		<li><a href="#experience">EXPERIENCE</a></li>
 		<li><a href="#projects">PROJECTS</a></li>
 		<li><a href="#skills">SKILLS</a></li>
-		<li><a href="#resume">RESUME</a></li>
+		<li>
+			<a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-link"
+				>RESUME</a
+			>
+		</li>
 	</ul>
 </nav>
 
@@ -50,6 +54,12 @@
 		font-size: 20px;
 	}
 
+	.resume-link {
+		border: 1px solid black;
+		border-radius: 100px;
+		padding: 0.25em 1em;
+	}
+
 	@media (max-width: 768px) {
 		.menu-icon {
 			display: flex;
@@ -78,12 +88,10 @@
 			padding: 10px 0;
 		}
 
-		/* When checkbox is checked, show the menu */
 		.menu-toggle:checked + .menu-icon + ul {
 			display: flex;
 		}
 
-		/* Optional: Add a little bit of transition effect */
 		ul {
 			transition: all 0.3s ease;
 		}
