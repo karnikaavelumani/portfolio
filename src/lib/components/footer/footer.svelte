@@ -10,7 +10,7 @@
 <footer>
 	<div class="container">
 		<div class="content">
-			<p class="go_back">Back to the top!</p>
+			<p class="go_back"><a href="#hero">Back to the top!</a></p>
 			<ul class="contacts">
 				{#each contacts as contact (contact.name)}
 					<li>
@@ -68,6 +68,11 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		color: white;
+	}
+
+	a {
+		text-decoration: none;
 		color: white;
 	}
 </style>

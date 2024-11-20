@@ -1,5 +1,4 @@
 <script>
-	import Spacing from '$lib/spacing.svelte';
 	import Hero from './hero.svelte';
 	import About from './about.svelte';
 	import Experience from './exp.svelte';
@@ -11,8 +10,22 @@
 	<title>Karni's Portfolio</title>
 </svelte:head>
 
-<Hero />
-<About />
-<Experience />
-<Projects />
-<Skills />
+<div id="hero">
+	<Hero />
+</div>
+
+<div id="about">
+	<About />
+</div>
+
+<div id="experience">
+	<Experience />
+</div>
+
+<div id="projects">
+	<Projects />
+</div>
+
+<div id="skills">
+	<Skills />
+</div>
