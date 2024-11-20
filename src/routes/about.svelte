@@ -40,7 +40,6 @@
 		font-weight: 300;
 	}
 
-	/* make it responsive in all screen sizes */
 	@media (max-width: 768px) {
 		.container {
 			width: 80%;

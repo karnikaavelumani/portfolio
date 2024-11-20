@@ -68,11 +68,18 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		text-align: center;
 		color: white;
 	}
 
 	a {
 		text-decoration: none;
 		color: white;
+	}
+
+	@media (max-width: 768px) {
+		footer {
+			border-radius: 75px 75px 0 0;
+		}
 	}
 </style>
