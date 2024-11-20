@@ -1,16 +1,14 @@
-/* @import url('https://fonts.googleapis.com/css?family=Comic+Neue:wght@400;700'); */
-
-@font-face {
-	font-family: 'AnimeAceFont';
-	src: url('/anime-ace-font/anime-ace.regular.woff') format('woff');
-}
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 html,
 body,
 #svelte {
-	font-family: 'AnimeAceFont', 'Verdana', 'Helvetica', sans-serif;
+	font-family: 'Lexend', 'Verdana', 'Helvetica', sans-serif;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
 }
 
 body {
-	background-color: #1a1b1d;
+	background-color: #fffdf1;
 }

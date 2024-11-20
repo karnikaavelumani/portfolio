@@ -1,40 +1,21 @@
 <script lang="ts">
-	// TODO: Add button for contacts
-	const contact = ['email', 'phone', 'linkedin', 'discord', 'whatsapp'];
-	const socials = [
-		{ name: 'github', url: 'https://github.com/karnikaavelumani' },
-		{ name: 'tiktok', url: 'https://www.tiktok.com/@demonic__goat' },
-		{ name: 'mastodon', url: 'https://mastodon.social/@demonicgoat' },
-		{ name: 'pinterest', url: 'https://www.pinterest.com/karnivelu/' },
-		{ name: 'reddit', url: 'https://www.reddit.com/user/Demonic__Goat' },
-		{ name: 'youtube', url: 'https://www.youtube.com/@karnikaavelumani' },
-		{ name: 'facebook', url: 'https://www.facebook.com/karnikaa.velumani' },
-		{ name: 'figma', url: 'https://www.figma.com/@karni' }
+	const contacts = [
+		{ name: 'email', url: 'mailto:karnivelu@outlook.com' },
+		{ name: 'phone', url: 'tel:+1-714-609-2078' },
+		{ name: 'linkedin', url: 'https://linkedin/in/karnivelu' },
+		{ name: 'github', url: 'https://github.com/karnikaavelumani' }
 	];
 </script>
 
 <footer>
 	<div class="container">
-		<div class="contact_container">
-			<p class="contact_title">Get in touch</p>
-			<ul class="contact">
-				{#each contact as contactPath (contactPath)}
+		<div class="content">
+			<p class="go_back"><a href="#hero">Back to the top!</a></p>
+			<ul class="contacts">
+				{#each contacts as contact (contact.name)}
 					<li>
-						<a href={contactPath} target="_blank" rel="noopener noreferrer">
-							<img src={`/assets/${contactPath}.svg`} alt={contactPath.slice(1)} />
-						</a>
-					</li>
-				{/each}
-			</ul>
-		</div>
-
-		<div class="socials_container">
-			<p class="social_title">Stay connected</p>
-			<ul class="socials">
-				{#each socials as social (social.name)}
-					<li>
-						<a href={social.url} target="_blank" rel="noopener noreferrer">
-							<img src={`/assets/${social.name}.svg`} alt={social.name} />
+						<a href={contact.url} target="_blank" rel="noopener noreferrer">
+							<img src={`/assets/${contact.name}.svg`} alt={contact.name} />
 						</a>
 					</li>
 				{/each}
@@ -47,59 +28,58 @@
 
 <style>
 	footer {
-		display: grid;
-		justify-self: center;
-		align-self: center;
-		background-color: white;
-		max-width: 1024px;
-		padding: 1rem 0;
-		margin: 0 auto;
-		border: 2px solid #000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: black;
+		border-radius: 100px 100px 0 0;
+		width: 100%;
 	}
 
 	.container {
-		display: grid;
-		justify-self: center;
-		align-self: center;
-	}
-
-	.contact_container {
-		display: grid;
-		justify-self: center;
-		align-self: center;
-	}
-
-	.socials,
-	.contact {
 		display: flex;
-		list-style: none;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 50%;
+	}
+
+	ul {
+		display: flex;
+		gap: 1em;
 		padding: 0;
-	}
-
-	.socials li,
-	.contact li {
-		margin: 0 0.5rem;
-	}
-
-	.socials img,
-	.contact img {
-		width: 3rem;
-	}
-
-	.social_title,
-	.contact_title {
-		display: grid;
-		justify-self: center;
-		align-self: center;
-		text-align: center;
 		margin: 0;
 	}
 
-	.copyright_title {
-		display: grid;
-		justify-self: center;
-		align-self: center;
+	li {
+		border: 1px solid white;
+		border-radius: 50%;
+		list-style: none;
+	}
+
+	img {
+		width: 35px;
+		height: 35px;
+		padding: 10px;
+	}
+
+	p {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		text-align: center;
-		margin: 0;
+		color: white;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+	@media (max-width: 768px) {
+		footer {
+			border-radius: 75px 75px 0 0;
+		}
 	}
 </style>

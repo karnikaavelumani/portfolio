@@ -1,22 +1,31 @@
 <script>
-	import Spacing from '$lib/spacing.svelte';
-	import Page1 from './page1.svelte';
-	import Page2 from './page2.svelte';
-	import Page3 from './page3.svelte';
+	import Hero from './hero.svelte';
+	import About from './about.svelte';
+	import Experience from './exp.svelte';
+	import Projects from './projects.svelte';
+	import Skills from './skills.svelte';
 </script>
 
 <svelte:head>
 	<title>Karni's Portfolio</title>
 </svelte:head>
 
-<Page1 />
+<div id="hero">
+	<Hero />
+</div>
 
-<Spacing --min="75px" --med="100px" --max="30px" />
+<div id="about">
+	<About />
+</div>
 
-<Page2 />
+<div id="experience">
+	<Experience />
+</div>
 
-<Spacing --min="75px" --med="100px" --max="30px" />
+<div id="projects">
+	<Projects />
+</div>
 
-<Page3 />
-
-<Spacing --min="75px" --med="100px" --max="30px" />
+<div id="skills">
+	<Skills />
+</div>

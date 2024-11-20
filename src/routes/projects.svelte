@@ -1,0 +1,157 @@
+<script>
+	import Button from '../lib/components/button/button.svelte';
+</script>
+
+<section class="container">
+	<div class="content">
+		<h1 class="header">PROJECTS</h1>
+		<div class="groups">
+			<a
+				href="https://github.com/karnikaavelumani/acmcsuf.com"
+				class="project-link"
+				target="_blank"
+			>
+				<div class="project">
+					<img src="/assets/acmcsuf.svg" alt="Screenshot of project acmcsuf.com" />
+					<div class="description">
+						<h4 class="title">acmcsuf.com</h4>
+						<Button text="SvelteKit" href="/disabled" disabled={true} />
+						<Button text="TypeScript" href="/disabled" disabled={true} />
+						<Button text="HTML5/CSS3" href="/disabled" disabled={true} />
+					</div>
+				</div>
+			</a>
+
+			<a
+				href="https://github.com/karnikaavelumani/task-manager"
+				class="project-link"
+				target="_blank"
+			>
+				<div class="project">
+					<img src="/assets/trello.svg" alt="Screenshot of project trello clone" />
+					<div class="description">
+						<h4 class="title">Trello Clone</h4>
+						<Button text="React" href="/disabled" disabled={true} />
+						<Button text="Next.js" href="/disabled" disabled={true} />
+						<Button text="Node.js" href="/disabled" disabled={true} />
+					</div>
+				</div>
+			</a>
+
+			<a
+				href="https://github.com/karnikaavelumani/KnightsvGnomes"
+				class="project-link"
+				target="_blank"
+			>
+				<div class="project">
+					<img src="/assets/gnome.svg" alt="Screenshot of gnome asset" />
+					<div class="description">
+						<h4 class="title">Knights vs Gnomes</h4>
+						<Button text="Unity" href="/disabled" disabled={true} />
+						<Button text="C#" href="/disabled" disabled={true} />
+						<Button text="Aseprite" href="/disabled" disabled={true} />
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="extra">
+		<Button text="More projects here!" href="https://github.com/karnikaavelumani" />
+	</div>
+</section>
+
+<style>
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 50%;
+		margin: 0 auto;
+		min-height: 100vh;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	.header {
+		font-size: 75px;
+		font-weight: 400;
+		margin: 0;
+		margin-bottom: 1rem;
+	}
+
+	.groups {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2rem;
+	}
+
+	.project {
+		border: 1px solid;
+		border-radius: 25px;
+		padding: 2rem;
+		width: 400px;
+		height: 400px;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.project:hover {
+		transform: scale(1.05);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	}
+
+	.project img {
+		max-width: 80%;
+		max-height: 80%;
+	}
+
+	.project-link {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.description {
+		position: absolute;
+		bottom: 1rem;
+		left: 1rem;
+		padding: 0.5rem;
+		border-radius: 8px;
+	}
+
+	.title {
+		font-size: 20px;
+		margin: 0;
+	}
+
+	.extra {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 2rem;
+	}
+
+	@media (max-width: 1024px) {
+		.groups {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.project {
+			width: 300px;
+			height: 300px;
+		}
+
+		.header {
+			font-size: 50px;
+		}
+	}
+</style>
